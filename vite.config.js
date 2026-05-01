@@ -5,5 +5,5 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: '/Social Media Dashboard/'
+  base: '/Social-Media-Dashboard/'
 })
