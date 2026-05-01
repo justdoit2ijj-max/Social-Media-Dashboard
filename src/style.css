@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --bg-top: hsl(230, 17%, 14%);
+    --bg: hsl(232, 19%, 15%);
+    --bg-card: hsl(228, 28%, 20%);
+    --bg-card-active: hsl(220, 19%, 33%);
+    --text-primrary: hsl(230, 22%, 74%);
+    --text-secondary: hsl(0, 100%, 100%);
+    --toggle-gradient: linear-gradient(90deg, hsl(210, 79%, 56%), hsl(146, 68%, 55%))
+}
+
+.light {
+    --bg-top: hsl(0, 100%, 100%);
+    --bg: hsl(225, 100%, 98%);
+    --bg-card: hsl(227, 47%, 96%);
+    --bg-card-active: hsl(0, 0%, 98%);
+    --text-primrary: hsl(228, 12%, 44%);
+    --text-secondary: hsl(230, 17%, 14%);
+    --toggle-gradient: hsl(230, 22%, 74%);
+}
+
+@layer utilities {
+    .bg {
+        background-color: var(--bg);
+    }
+
+    .bg-top {
+        border-color: var(--bg-top);
+    }
+
+    .bg-card {
+        background-color: var(--bg-card);
+    }
+
+    .border-instagram {
+        border-top: 4px solid transparent;
+        background:
+            linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+            linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
+    }
+
+    .border-instagram:active {
+        background:
+            linear-gradient(var(--bg-card-active), var(--bg-card-active)) padding-box,
+            linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
+    }
+
+    .text-primrary {
+        color: var(--text-primrary);
+    }
+
+    .text-secondary {
+        color: var(--text-secondary);
+    }
+
+    .toggle-gradient {
+        background: var(--toggle-gradient);
+    }
+
+    .inter {
+        font-family: 'Inter', sans-serif;
+    }
+}

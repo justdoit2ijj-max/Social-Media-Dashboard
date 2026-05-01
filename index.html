@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Dashboard</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <script src="app.js" defer></script>
+</head>
+
+<body class="bg px-5 min-h-screen">
+  <header class="max-w-277.5 mx-auto">
+    <h1 class="text-secondary font-semibold pt-10 md:pt-4 text-[1.7rem] mb-2 inter">Social Media Dashboard</h1>
+    <p class="text-primrary inter mb-4">Total Followers: 23,004</p>
+  </header>
+  <main class="h-max w-full max-w-277.5 mx-auto  border-t-gray-600 border-t">
+    <section class="flex pt-4 justify-between">
+      <p class="text-primrary inter font-semibold">Dark Mode</p>
+      <label class="inline-block relative w-15 h-8.5">
+        <input type="checkbox" class="opacity-0 h-0 w-0 peer sr-only" id="toggle">
+        <span class="absolute cursor-pointer inset-0 toggle-gradient transition duration-500 before:content-[''] before:absolute  before:h-6.5 before:w-6.5 before:left-1 before:bottom-1 before:bg-(--bg) before:transition before:duration-500 peer-focus:shadow-[0_0_1px_#2196F3] 
+          peer-checked:before:translate-x-6.5 before:rounded-full rounded-[34px] text-xs"></span>
+      </label>
+    </section>
+    <section class="mt-6 mb-12 grid grid-cols-1 md:grid-cols-4 md:gap-4 gap-8">
+      <div
+        class="w-full bg-card border-t-4 border-t-blue-600 rounded-md h-max flex justify-center items-center flex-col py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+        <div class="flex gap-2 mb-5">
+          <img src="images/icon-facebook.svg" alt="facebook icon">
+          <p class="text-primrary inter">@nathanf</p>
+        </div>
+        <h2 class="inter text-secondary text-6xl font-semibold">1987</h2>
+        <p class="inter text-primrary text-md mb-6">F O L L O W E R S</p>
+        <p class="inter text-green-500 text-xs flex items-center gap-1">
+          <img src="images/icon-up.svg" alt="icon up">
+          12 Today
+        </p>
+      </div>
+      <div
+        class="w-full bg-card border-t-4 border-t-blue-500 rounded-md h-max flex justify-center items-center flex-col py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+        <div class="flex gap-2 mb-5">
+          <img src="images/icon-twitter.svg" alt="twitter icon">
+          <p class="text-primrary inter">@nathanf</p>
+        </div>
+        <h2 class="inter text-secondary text-6xl font-semibold">1044</h2>
+        <p class="inter text-primrary text-md mb-6">F O L L O W E R S</p>
+        <p class="inter text-green-500 text-xs flex items-center gap-1">
+          <img src="images/icon-up.svg" alt="icon up">
+          99 Today
+        </p>
+      </div>
+      <div
+        class="w-full border-instagram rounded-md h-max flex justify-center items-center flex-col py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+        <div class="flex gap-2 mb-5">
+          <img src="images/icon-instagram.svg" alt="instagram icon">
+          <p class="text-primrary inter">@nathanf</p>
+        </div>
+        <h2 class="inter text-secondary text-6xl font-semibold">11K</h2>
+        <p class="inter text-primrary text-md mb-6">F O L L O W E R S</p>
+        <p class="inter text-green-500 text-xs flex items-center gap-1">
+          <img src="images/icon-up.svg" alt="icon up">
+          1099 Today
+        </p>
+      </div>
+      <div
+        class="w-full bg-card border-t-4 border-t-red-700 rounded-md h-max flex justify-center items-center flex-col py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+        <div class="flex gap-2 mb-5">
+          <img src="images/icon-youtube.svg" alt="youtube icon">
+          <p class="text-primrary inter">@nathanf</p>
+        </div>
+        <h2 class="inter text-secondary text-6xl font-semibold">8239</h2>
+        <p class="inter text-primrary text-md mb-6">F O L L O W E R S</p>
+        <p class="inter text-red-500 text-xs flex items-center gap-1">
+          <img src="images/icon-down.svg" alt="icon down">
+          144 Today
+        </p>
+      </div>
+    </section>
+    <section class="mb-8">
+      <h2 class="inter font-bold text-2xl text-secondary mb-6">Overview - Today</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 md:gap-2 gap-4">
+        <div class="h-max bg-card rounded-sm px-4 py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+          <div class="flex justify-between mb-4">
+            <p class="inter text-primrary">Page Views</p>
+            <img src="images/icon-facebook.svg" alt="facebook icon">
+          </div>
+          <div class="flex justify-between">
+            <p class="inter text-secondary text-3xl font-bold">87</p>
+            <p class="inter text-green-500 text-xs flex items-center gap-1">
+              <img src="images/icon-up.svg" alt="icon up">
+              3%
+            </p>
+          </div>
+        </div>
+        <div class="h-max bg-card rounded-sm px-4 py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+          <div class="flex justify-between mb-4">
+            <p class="inter text-primrary">Likes</p>
+            <img src="images/icon-facebook.svg" alt="facebook icon">
+          </div>
+          <div class="flex justify-between">
+            <p class="inter text-secondary text-3xl font-bold">52</p>
+            <p class="inter text-red-500 text-xs flex items-center gap-1">
+              <img src="images/icon-down.svg" alt="icon down">
+              2%
+            </p>
+          </div>
+        </div>
+        <div class="h-max bg-card rounded-sm px-4 py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+          <div class="flex justify-between mb-4">
+            <p class="inter text-primrary">Likes</p>
+            <img src="images/icon-instagram.svg" alt="instagram icon">
+          </div>
+          <div class="flex justify-between">
+            <p class="inter text-secondary text-3xl font-bold">5462</p>
+            <p class="inter text-green-500 text-xs flex items-center gap-1">
+              <img src="images/icon-up.svg" alt="icon up">
+              2257%
+            </p>
+          </div>
+        </div>
+        <div class="h-max bg-card rounded-sm px-4 py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+          <div class="flex justify-between mb-4">
+            <p class="inter text-primrary">Profile Views</p>
+            <img src="images/icon-instagram.svg" alt="instagram icon">
+          </div>
+          <div class="flex justify-between">
+            <p class="inter text-secondary text-3xl font-bold">52K</p>
+            <p class="inter text-green-500 text-xs flex items-center gap-1">
+              <img src="images/icon-up.svg" alt="icon up">
+              1375%
+            </p>
+          </div>
+        </div>
+        <div class="h-max bg-card rounded-sm px-4 py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+          <div class="flex justify-between mb-4">
+            <p class="inter text-primrary">Retweets</p>
+            <img src="images/icon-twitter.svg" alt="twitter icon">
+          </div>
+          <div class="flex justify-between">
+            <p class="inter text-secondary text-3xl font-bold">117</p>
+            <p class="inter text-green-500 text-xs flex items-center gap-1">
+              <img src="images/icon-up.svg" alt="icon up">
+              303%
+            </p>
+          </div>
+        </div>
+        <div class="h-max bg-card rounded-sm px-4 py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+          <div class="flex justify-between mb-4">
+            <p class="inter text-primrary">Likes</p>
+            <img src="images/icon-twitter.svg" alt="twitter icon">
+          </div>
+          <div class="flex justify-between">
+            <p class="inter text-secondary text-3xl font-bold">507</p>
+            <p class="inter text-green-500 text-xs flex items-center gap-1">
+              <img src="images/icon-up.svg" alt="icon up">
+              553%
+            </p>
+          </div>
+        </div>
+        <div class="h-max bg-card rounded-sm px-4 py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+          <div class="flex justify-between mb-4">
+            <p class="inter text-primrary">Likes</p>
+            <img src="images/icon-youtube.svg" alt="youtube icon">
+          </div>
+          <div class="flex justify-between">
+            <p class="inter text-secondary text-3xl font-bold">87</p>
+            <p class="inter text-red-500 text-xs flex items-center gap-1">
+              <img src="images/icon-down.svg" alt="icon down">
+              19%
+            </p>
+          </div>
+        </div>
+        <div class="h-max bg-card rounded-sm px-4 py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600">
+          <div class="flex justify-between mb-4">
+            <p class="inter text-primrary">Total Views</p>
+            <img src="images/icon-youtube.svg" alt="youtube icon">
+          </div>
+          <div class="flex justify-between">
+            <p class="inter text-secondary text-3xl font-bold">87</p>
+            <p class="inter text-red-500 text-xs flex items-center gap-1">
+              <img src="images/icon-down.svg" alt="icon down">
+              12%
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
