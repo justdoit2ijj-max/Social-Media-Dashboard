@@ -62,4 +62,8 @@
     .inter {
         font-family: 'Inter', sans-serif;
     }
+
+    .card {
+        @apply w-full border-t-4 rounded-md h-max flex justify-center items-center flex-col py-6 cursor-pointer transition-all duration-150 active:bg-gray-50 dark:active:bg-gray-600;
+    }
 }
